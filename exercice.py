@@ -23,10 +23,10 @@ def prime_integer_summation() -> int:
         for j in range(c-1, 1, -1): 
             if c%j == 0:
                 break
-        if j == 1:
-            i += 1
-            S += c
-        c += 1
+            if j == 1:
+                i += 1
+                S += c
+            c += 1
     return S
 
 
