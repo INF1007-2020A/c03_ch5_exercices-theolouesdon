@@ -1,0 +1,41 @@
+test_factorial (__main__.TestExercice) ... FAIL
+test_prefixes (__main__.TestExercice) ... FAIL
+test_summation (__main__.TestExercice) ... ERROR
+
+======================================================================
+ERROR: test_summation (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 33, in test_summation
+    output = exercice.prime_integer_summation()
+  File "/home/runner/work/c03_ch5_exercices-theolouesdon/c03_ch5_exercices-theolouesdon/exercice.py", line 28, in prime_integer_summation
+    if j == 1:
+UnboundLocalError: local variable 'j' referenced before assignment
+
+======================================================================
+FAIL: test_factorial (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 50, in test_factorial
+    'Erreur dans le remplacement de caractère'
+AssertionError: Lists differ: [0, 0, 0, 0] != [1, 6, 40320, 3628800]
+
+First differing element 0:
+0
+1
+
+- [0, 0, 0, 0]
++ [1, 6, 40320, 3628800] : Erreur dans le remplacement de caractère
+
+======================================================================
+FAIL: test_prefixes (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 20, in test_prefixes
+    'Mauvaise identification de la parité de la longueur de la chaine'
+AssertionError: First sequence is not a list: 'Pack'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2, errors=1)
