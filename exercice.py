@@ -15,7 +15,7 @@ def use_prefixes() -> List[str]:
     for c in prefixes:
         canard = c + suffixes
         liste[c] = canard
-    return canard
+    return liste
 
 
 def prime_integer_summation() -> int:
