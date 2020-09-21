@@ -12,9 +12,11 @@ def convert_to_absolute() -> float:
 
 def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
+    resutat = []
     for c in prefixes:
         canard = c + suffixes
-    return canard
+        resultat.append(canard)
+    return resultat
 
 
 def prime_integer_summation() -> int:
