@@ -21,7 +21,7 @@ def prime_integer_summation() -> int:
     S = 0
     while i < 100:
         for j in range(c-1, 0, -1): 
-            if c % j == 0:
+            if c%j == 0:
                 break
         if j == 1:
             i += 1
@@ -31,10 +31,11 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    fact = 1
-    for i in range(number, 1, -1)
-        fact *= i
-    return fact
+    result = 1
+    if number != 0:
+        for i in range(number, 1, -1)
+            result *= i
+    return result
 
 
 def use_continue() -> None:
