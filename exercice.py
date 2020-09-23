@@ -20,13 +20,13 @@ def prime_integer_summation() -> int:
     c = 2
     S = 0
     while i < 100:
-        for j in range(c-1, 1, -1): 
-            if c%j == 0:
+        for j in range(c-1, 0, -1): 
+            if c % j == 0:
                 break
-            if j == 1:
-                i += 1
-                S += c
-            c += 1
+        if j == 1:
+            i += 1
+            S += c
+        c += 1
     return S
 
 
@@ -38,7 +38,10 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
-    pass
+    for entier in range(1,11)
+        if entier == 5
+            continue
+        print(entier)
 
 
 def main() -> None:
