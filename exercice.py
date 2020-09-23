@@ -31,10 +31,10 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    factorial = 0
-    for i in range(number, 2, -1)
-        factorial *= i
-    return factorial
+    fact = 1
+    for i in range(number, 1, -1)
+        fact *= i
+    return fact
 
 
 def use_continue() -> None:
